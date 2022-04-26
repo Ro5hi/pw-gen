@@ -1,4 +1,4 @@
-# Fractals
+# PW GEN
 
 A vanilla HTML/CSS/JavaScript web-application generates a reset token for reset links. Includes a copy function so you can keep in your clipboard to paste for work. 
 
