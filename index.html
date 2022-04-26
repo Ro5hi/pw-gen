@@ -2,17 +2,20 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
     <script src="scripts.js"></script>
     <title>Reset Link Generator</title>
 </head>
-    <div id="Token">
-        <input type="text" id="randomizeToken" value="resetToken" readonly>
-        <button class="generate" onclick="generateToken()">Generate</button>
-        <button class="copy" onclick="copyToken()">Copy</button>
-    </div>
-    <div id="resetLink">
-        <input type="text" id="passwordLink" value="https://www.snackcrate.com/password-change/?token=" readonly>
-        <button class="copy" onclick="copyLink()">Copy</button>
+    <div id="generator">
+        <div id="resetLink">
+            <input type="text" id="passwordLink" value="https://www.snackcrate.com/password-change/?token=" readonly>
+            <button id="button" class="copy" onclick="copyLink()">Copy</button>
+        </div>
+        <div id="token">
+            <input type="text" id="randomizeToken" value="resetToken" readonly>
+            <button id="button" class="generate" onclick="generateToken()">Generate</button>
+            <button id="button" class="copy" onclick="copyToken()">Copy</button>
+        </div>
     </div>
 </html>
