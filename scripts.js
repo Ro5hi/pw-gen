@@ -22,3 +22,12 @@ var generator = document.getElementById("randomizeToken");
         const link = document.getElementById('passwordLink').value;
         navigator.clipboard.writeText(link);
     };
+
+    // function success() {
+    //     const copy = document.getElementById("copyBtn");
+    //     const span = document.getElementById(".copy-text")
+
+    //     copy.addEventListener("click", () => {
+    //         span.innerText = "Copied!"
+    //     })
+    // }
