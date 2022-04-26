@@ -8,14 +8,16 @@
     <title>Reset Link Generator</title>
 </head>
     <div id="generator">
+        <h2>Password Reset Link</h2>
+        <p>Randomize the resetToken with ease. Double-click the copy button so it is saved to your clipboard as it doesn't always work the first time.</p>
         <div id="resetLink">
             <input type="text" id="passwordLink" value="https://www.snackcrate.com/password-change/?token=" readonly>
-            <button id="button" class="copy" onclick="copyLink()">Copy</button>
+            <button id="copyLink" class="link-btn" onclick="copyLink()">Copy</button>
         </div>
         <div id="token">
             <input type="text" id="randomizeToken" value="resetToken" readonly>
-            <button id="button" class="generate" onclick="generateToken()">Generate</button>
-            <button id="button" class="copy" onclick="copyToken()">Copy</button>
+            <button id="generate" class="generate-btn" onclick="generateToken()">Generate</button>
+            <button id="copyToken" class="token-btn" onclick="copyToken()">Copy</button>
         </div>
     </div>
 </html>

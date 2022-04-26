@@ -9,7 +9,21 @@ body {
     display: flex;
 }
 
-#button {
+h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+p {
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+
+* button {
     background-color: #ffffff;
     border: 1px solid #ff9e49;
     color: #ff9e49;
@@ -24,6 +38,12 @@ body {
     border-radius: 6px;
 }
 
+button:hover {
+    background-color: #ff9e49;
+    transition: 0.2s ease-out;
+    color: #fff;
+}
+
 input {
     width: 100%;
     padding: 12px 20px;
@@ -34,11 +54,6 @@ input {
     background-color: #f8f8f8;
 }
 
-#button:hover {
-    background-color: #ff9e49;
-    transition: 0.2s ease-out;
-    color: #fff;
-}
 
 #generator {
     width: 50%;
