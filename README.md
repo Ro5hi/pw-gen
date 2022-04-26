@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # PW GEN
+=======
+# Fractals
+>>>>>>> e9717de468df4c0465b6a281887cf39a5810156f
 
 A vanilla HTML/CSS/JavaScript web-application generates a reset token for reset links. Includes a copy function so you can keep in your clipboard to paste for work. 
 
