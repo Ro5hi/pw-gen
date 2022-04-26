@@ -1,17 +1,27 @@
-const randomizeButton = document.getElementById('randomizeButton');
-const copyToken = document.getElementById('copyToken');
-const copyLink = document.getElementById('copyLink');
-    
-    function generateToken(length) {
-        const url = "https://www.snackcrate.com/password-change/?token=";
+var generator = document.getElementById("randomizeToken");
+
+    function generateToken() {
         var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-        let token = '';
-        const strLength = str.length;
+        const strLength = 16;
+        let token = "";
         
-        for ( let i = 0; i < length; i++) {
-            str += str.charAt(Math.floor(Math.random() * strLength));
+        for ( var i = 0; i <= strLength; i++) {
+            var randomNumber = Math.floor(Math.random() * str.length);
+            token += str.substring(randomNumber, randomNumber +1);
         }
-        return url.join(token)
+        document.getElementById("randomizeToken").value = token;
+        
     }
     
-    console.log((generateString(16)));
+    function copyToken() {
+        const token = document.getElementById('randomizeToken').value;
+        navigator.clipboard.writeText(token);
+        alert("Copied: " + token);
+    };
+
+    function copyLink() {
+        const link = document.getElementById('passwordLink').value;
+        navigator.clipboard.writeText(link);
+        alert("Copied: " + link);
+    };
+

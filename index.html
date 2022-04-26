@@ -3,18 +3,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts.js"></script>
     <title>Reset Link Generator</title>
 </head>
-    <div id="resetToken">
-        <input type="text" id="randomizeToken" value="Randomize Token" readonly>
-        <button class="generate">Generate</button>
+    <div id="Token">
+        <input type="text" id="randomizeToken" value="resetToken" readonly>
+        <button class="generate" onclick="generateToken()">Generate</button>
+        <button class="copy" onclick="copyToken()">Copy</button>
     </div>
-    <div id="copyToken">
-        <input type="text" id="copytoken" value="resetToken" readonly>
-        <button class="copy">Copy</button>
-    </div>
-    <div id="copyLink">
-        <input type="text" id="copyLink" value="Password Reset Link" readonly>
-        <button class="copy">Copy</button>
+    <div id="resetLink">
+        <input type="text" id="passwordLink" value="https://www.snackcrate.com/password-change/?token=" readonly>
+        <button class="copy" onclick="copyLink()">Copy</button>
     </div>
 </html>
